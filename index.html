@@ -142,6 +142,38 @@
 					</aside>
 				</section>
 				<section>
+					<pre>
+						<code>
+							var someObject = { str: "Some text", id: 5 };
+							console.log(someObject);
+						</code>
+					</pre>
+					<pre><code>[09:27:13.475] ({str:"Some text", id:5})</code></pre>
+					<br/>
+					<pre><code>
+						var car = "Dodge Charger";
+var someObject = { str: "Some text", id: 5 };
+console.info("My first car was a", car, ". The object is: ", someObject);
+					</code></pre>
+					<pre></code>
+							[09:28:22.711] My first car was a Dodge Charger . The object is:  ({str:"Some text", id:5})
+					</code></pre>
+				</section>
+				<section>
+				</section>
+				<section>
+				</section>				
+				<section>
+				</section>				
+				<section>
+				</section>				
+				<section>
+				</section>				
+				<section>
+				</section>				
+				<section>
+				</section>				
+				<section>
 				</section>
 
 			</div>
@@ -149,6 +181,7 @@
 		
 		<script src="/js-debug/reveal.js"></script>
 		<script src="/js-debug/notes.js"></script>
+		<script src="/js-debug/highlight.js"></script>
 		<!-- 	<script src="node_modules/reveal.js/plugin/markdown/markdown.js"></script>
 		<script src="node_modules/reveal.js/plugin/highlight/highlight.js"></script> -->
 		<script>
@@ -164,7 +197,7 @@
 				// 	url: '127.0.0.1:1948',
 				// },
 					// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealNotes ],
+				plugins: [ RevealNotes, RevealHighlight ],
 				// dependencies: [
 				// 	{ src: 'node_modules/socket.io/socket.io.js', async: true },
 				// 	{ src: 'node_modules/reveal-multiplex/client.js', async: true }
