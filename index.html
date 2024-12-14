@@ -232,6 +232,29 @@
 						</code>
 					</pre>
 				</section>
+				<section>
+					<h4>console.table</h4>
+					<pre>
+						<code data-trim>
+							const data = [
+							  { section: 'HTML', count: 212 },
+							  { section: 'CSS', count: 121 },
+							  { section: 'JavaScript', count: 182 },
+							  { section: 'Tools', count: 211 },
+							]
+
+							console.table(data)
+							// ┌─────────┬──────────────┬───────┐
+							// │ (index) │   section    │ count │
+							// ├─────────┼──────────────┼───────┤
+							// │    0    │    'HTML'    │  212  │
+							// │    1    │    'CSS'     │  121  │
+							// │    2    │ 'JavaScript' │  182  │
+							// │    3    │   'Tools'    │  211  │
+							// └─────────┴──────────────┴───────┘
+						</code>
+					</pre>
+				</section>
 			</div>
 		</div>
 		
