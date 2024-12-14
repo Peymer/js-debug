@@ -160,6 +160,25 @@ console.info("My first car was a", car, ". The object is: ", someObject);
 					</code></pre>
 				</section>
 				<section>
+					<h4>Преобразование строк с использованием масок</h4>
+					<table>
+						<tr><td>%o или %O</td><td>Выводит ссылку на JavaScript-объект. Нажатие на ссылку приведёт к открытию инспектора кода.</td></tr>
+						<tr><td>%d или %i</td><td>Выведет целое число. Поддерживается форматирование, например, console.log("АБВГД %.2d", 1.1) выведет число как две значащих цифры с лидирующим нулём: АБВГД 01</td></tr>
+						<tr><td>%s</td><td>Выводит строку.</td></tr>
+						<td><td>%f</td><td>Выводит число с плавающей точкой. Поддерживается форматирование, например, console.log("АБВГД %.2f", 1.1) выведет число до двух знаков после запятой: АБВГД 1.10</td></tr>
+					</table>
+					<pre><code>
+						for (var i=0; i<5; i++) {
+						  console.log("Hello, %s. You've called me %d times.", "Bob", i+1);
+						}					
+					</code></pre>
+					<pre>
+					[13:14:13.481] Hello, Bob. You've called me 1 times.<br/>
+					[13:14:13.483] Hello, Bob. You've called me 2 times.<br/>
+					[13:14:13.485] Hello, Bob. You've called me 3 times.<br/>
+					[13:14:13.487] Hello, Bob. You've called me 4 times.<br/>
+					[13:14:13.488] Hello, Bob. You've called me 5 times.
+					</pre>
 				</section>
 				<section>
 				</section>				
