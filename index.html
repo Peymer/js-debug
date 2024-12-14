@@ -162,7 +162,7 @@
 				<section>
 					<h4>Стилизация вывода консоли</h4>
 					<pre>
-						<code data-trim>
+						<code data-trim data-noescape>
 							console.log("This is %cMy stylish message",
 								"color: yellow; font-style: italic; background-color: blue; padding: 2px;",
 							);
@@ -173,7 +173,7 @@
 				<section>
 					<h4>Группирование вывода в консоли</h4>
 					<pre>
-						<code data-trim>
+						<code data-trim data-noescape>
 							console.log("This is the outer level");
 							console.group();
 							console.log("Level 2");
@@ -191,7 +191,7 @@
 				<section>
 					<h4>Таймеры</h4>
 					<pre>
-						<code data-trim>
+						<code data-trim data-noescape>
 							console.time("answer time");
 							alert("Click to continue");
 							console.timeEnd("answer time");
@@ -202,7 +202,7 @@
 				<section>
 					<h4>Трассировка стека вызова</h4>
 					<pre>
-						<code data-trim>
+						<code data-trim data-noescape>
 							foo();
 
 							function foo() {
