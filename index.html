@@ -74,8 +74,79 @@
 					Для их запуска нажмите <kbd class="shortcut">Enter</kbd>.</p>
 				</section>
 				<section>
+					<h4>Объект console</h4>
+					<pre>
+						<code>
+							console.log("Failed to open the specified link");
+						</code>
+					</pre>
+					<img src="/js-debug/pic/chrome.png"/>
+					<aside class="notes">
+						<p>Объект Console служит для доступа к средствам отладки браузера</p>
+					</aside>
 				</section>
 				<section>
+					<pre>
+						<code>console.assert()</code>
+						<code>console.clear()</code>
+						<code>console.count()</code>
+						<code>console.countReset()</code>
+						<code>console.debug()</code>
+						<code>console.error()</code>
+						<code>console.group()</code>
+						<code>console.info()</code>
+						<code>console.log()</code>
+						<code>console.table()</code>
+						<code>console.time()</code>
+						<code>console.timeEnd())</code>
+						<code>console.warn()</code>
+					</pre>
+					<aside class="notes">					
+						console.assert()
+							Выводит в консоль (имеется ввиду веб-консоль) сообщение и стек вызова метода, если первый аргумент false.
+
+						console.clear()
+							Очистка консоли.
+
+						console.count()
+							Выводит количество вызовов метода с определённой меткой (передаётся в параметре метода)
+
+						console.countReset()
+							Обнуляет значение счётчика с заданным значением.
+
+						console.debug()
+							Синоним для log()
+
+						console.error()
+							Выводит сообщение об ошибке. Для форматирования вы можете использовать подстановочные символы (маски) с дополнительными параметрами.
+
+						console.group()
+							Создаёт новую группировку сообщений, сдвигая все следующие выводимые строки вправо на один уровень. Для завершения группы вызовите groupEnd().
+
+						console.groupCollapsed()
+							Создаёт новую группировку сообщений, сдвигая все следующие сообщения вправо на один уровень; в отличие от group() вывод происходи в свёрнутую группу, требующую раскрыть её вручную по кнопке. Для завершения группывызовите groupEnd().
+
+						console.groupEnd()
+							Выход из текущей группы.
+
+						console.info()
+							Информационное сообщение. Для форматирования вы можете использовать подстановочные символы (маски) с дополнительными параметрами.
+
+						console.log()
+							Общий метод вывода информации. Для форматирования вы можете использовать подстановочные символы (маски) с дополнительными параметрами.
+
+						console.table()
+							Отображает табличные данные в виде таблицы.
+
+						console.time()
+							Запускает таймер с именем из переданного параметра. Можно запустить одновременно до 10,000 таймеров на странице.
+
+						console.timeEnd()
+							Останавливает указанный таймер и записывает в лог, сколько прошло секунд от его старта.
+
+						console.trace()
+							Вывод трассировки стека.
+					</aside>
 				</section>
 				<section>
 				</section>
