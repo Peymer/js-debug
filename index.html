@@ -27,6 +27,9 @@
 				<section>
 					<aside class="notes">
 						<p>
+							Код уязвим для ошибок.
+						</p>
+						<p>
 							По умолчанию в браузере ошибки не видны.<br/>
 							То есть, если что-то пойдёт не так, мы не увидим, что именно сломалось, и не сможем это починить.
 						</p>
@@ -37,10 +40,44 @@
 							Для начала знакомства с этими мощными инструментами давайте выясним, как их открывать, смотреть ошибки и запускать команды JavaScript.
 						</p>	
 					</aside>
-				<h4>Консоль разработчика</h4>
-				<p>Код уязвим для ошибок.</p>
-				<p>Для WEB-обозревателей: «Инструменты разработки» (Developer tools).</p>
-				<p>Для Node: объект <code>console</code></p>
+					<h4>Консоль разработчика</h4>
+					<p>Для WEB-обозревателей: «Инструменты разработки» (Developer tools).</p>
+					<p>Для Node: объект <code>console</code></p>
+				</section>
+				<section>
+					<pre>
+						<code>
+							<!DOCTYPE HTML>
+							<html>
+							<head>
+							  <meta charset="utf-8">
+							</head>
+							<body>
+							  На этой странице есть ошибка в скрипте.
+							  <script>
+								lalala
+							  </script>
+							<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"8f2034c728e4a896","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2024.10.5","token":"9f3ad1cf53354ef3a8f18d624192683f"}' crossorigin="anonymous"></script>
+							</body>
+							</html>
+						</code>
+					</pre>
+					<aside class="notes">
+						рассмотрим код. Он содержит ошибку.<br/>
+						Она не видна обычному посетителю<br/>
+					</aside>
+				</section>
+				<section>
+					<p>Developer tools можно запустить нажав <kbd class="shortcut">F12</kbd></p>
+					<img ser="/js-debug/pic/chrome.png"/>
+					<p>Под сообщением об ошибке находится синий символ <code>&gt;</code>. Он обозначает командную строку, в ней мы можем редактировать и запускать JavaScript-команды. 
+					Для их запуска нажмите <kbd class="shortcut">Enter</kbd>.</p>
+				</section>
+				<section>
+				</section>
+				<section>
+				</section>
+				<section>
 				</section>
 
 			</div>
